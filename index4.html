@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* horizontal alignment because of flex dir column */
+      }
+
+      #main {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #c3c3c3;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        align-items: flex-start;
+      }
+
+      #main div {
+        margin: 10px;
+        width: 100px;
+        height: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Justify and Align Property</h1>
+      <div id="main">
+        <div style="background-color: coral"></div>
+        <div style="background-color: lightblue"></div>
+        <div style="background-color: pink; height: 100px"></div>
+        <div style="background-color: coral"></div>
+        <div style="background-color: lightblue"></div>
+        <div style="background-color: pink; height: 100px"></div>
+      </div>
+    </div>
+  </body>
+</html>
